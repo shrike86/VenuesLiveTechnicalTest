@@ -27,7 +27,7 @@ namespace VenuesLiveTechnicalTest.Data.Controllers
         public async Task<IActionResult> GetInvoices()
         {
             var invoices = await _invoiceRepository.GetInvoicesAsync();
-            return Ok(_mapper.Map<List<InvoiceDTO>>(invoices));
+            return Ok(_mapper.Map<IEnumerable<InvoiceDTO>>(invoices));
         }
 
         [HttpGet("{id}", Name = "GetInvoice")]

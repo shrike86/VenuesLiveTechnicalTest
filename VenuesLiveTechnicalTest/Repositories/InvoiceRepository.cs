@@ -20,14 +20,14 @@ namespace VenuesLiveTechnicalTest.API.Repositories
             _appDbContext = appDbContext;
         }
 
-        public async Task<Invoice> GetInvoiceByIdAsync(int id)
-        {
-            return await _appDbContext.Invoices.Where(i => i.Id == id).FirstOrDefaultAsync();
-        }
-
         public async Task<List<Invoice>> GetInvoicesAsync()
         {
             return await _appDbContext.Invoices.ToListAsync();
+        }
+
+        public async Task<Invoice> GetInvoiceByIdAsync(int id)
+        {
+            return await _appDbContext.Invoices.Where(i => i.Id == id).FirstOrDefaultAsync();
         }
 
         public async Task CreateInvoiceAsync(Invoice invoice)

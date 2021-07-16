@@ -1,0 +1,32 @@
+﻿@page
+@model InvoicesModel
+@{
+    ViewData["Title"] = "Invoices";
+}
+<a class="btn btn-primary" asp-page="CreateInvoice"><i class="fas fa-plus"></i> Create Invoice Item</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Description</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+            <th scope="col">Discount Percentage</th>
+            <th scope="col">Tax Percentage</th>
+            <th scope="col">Total Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var invoice in Model.Invoices)
+        {
+            <tr>
+                <td>@invoice.Description</td>
+                <td>@invoice.Quantity</td>
+                <td>@invoice.Price</td>
+                <td>@invoice.DiscountPercentage</td>
+                <td>@invoice.TaxPercentage</td>
+                <td>@invoice.TotalAmount</td>
+            </tr>
+        }
+    </tbody>
+</table>

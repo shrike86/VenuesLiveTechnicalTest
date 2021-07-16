@@ -1,18 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace VenuesLiveTechnicalTest.Data.Entities
+namespace VenuesLiveTechnicalTest.Web.Models
 {
-    public class Invoice
+    public class InvoiceVM
     {
-        public int Id { get; set; }
+        [Required]
         public string Description { get; set; }
+
+        [Required]
         public double Quantity { get; set; }
+
+        [Required]
         public double Price { get; set; }
+
+        [Required]
+        [Display(Name = "Discount Percentage")]
         public double DiscountPercentage { get; set; }
+
+        [Required]
+        [Display(Name = "Tax Percentage")]
         public double TaxPercentage { get; set; }
+
+        [Display(Name = "Total Amount")]
         public double TotalAmount { get; set; }
     }
 }

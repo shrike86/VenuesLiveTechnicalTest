@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenuesLiveTechnicalTest.API", "VenuesLiveTechnicalTest\VenuesLiveTechnicalTest.API.csproj", "{7288957B-F2F9-4444-9511-5B28DA349B8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VenuesLiveTechnicalTest.API", "VenuesLiveTechnicalTest\VenuesLiveTechnicalTest.API.csproj", "{7288957B-F2F9-4444-9511-5B28DA349B8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenuesLiveTechnicalTest.Shared", "VenuesLiveTechnicalTest.Shared\VenuesLiveTechnicalTest.Shared.csproj", "{0A707D16-8DF8-4976-A466-D2272F6D2FCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VenuesLiveTechnicalTest.Shared", "VenuesLiveTechnicalTest.Shared\VenuesLiveTechnicalTest.Shared.csproj", "{0A707D16-8DF8-4976-A466-D2272F6D2FCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenuesLiveTechnicalTest.Web", "VenuesLiveTechnicalTest.Web\VenuesLiveTechnicalTest.Web.csproj", "{FD3DFE03-ABB3-4033-BFB3-8065582878A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0A707D16-8DF8-4976-A466-D2272F6D2FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A707D16-8DF8-4976-A466-D2272F6D2FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A707D16-8DF8-4976-A466-D2272F6D2FCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD3DFE03-ABB3-4033-BFB3-8065582878A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD3DFE03-ABB3-4033-BFB3-8065582878A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD3DFE03-ABB3-4033-BFB3-8065582878A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD3DFE03-ABB3-4033-BFB3-8065582878A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

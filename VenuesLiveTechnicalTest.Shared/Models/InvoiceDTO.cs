@@ -9,6 +9,8 @@ namespace VenuesLiveTechnicalTest.Shared.Models
         [Required]
         public double Quantity { get; set; }
         [Required]
+        public double Price { get; set; } 
+        [Required]
         public double DiscountPercentage { get; set; }
         [Required]
         public double TaxPercentage { get; set; }

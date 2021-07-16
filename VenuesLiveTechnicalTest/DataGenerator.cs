@@ -28,9 +28,10 @@ namespace VenuesLiveTechnicalTest.API
                         Id = 1,
                         Description = "Soccer Ball",
                         Quantity = 1,
+                        Price = 10,
                         DiscountPercentage = 5,
                         TaxPercentage = 10,
-                        TotalAmount = 11.5
+                        TotalAmount = 10.45
                     });
 
                 context.SaveChanges();
