@@ -35,7 +35,6 @@ namespace VenuesLiveTechnicalTest.Web
             services.AddTransient<IInvoiceHelper, InvoiceHelper>();
 
             services.AddRazorPages()
-                .AddRazorRuntimeCompilation()
                 .AddRazorPagesOptions(options =>
                 {
                     options.Conventions.AddPageRoute("/CreateInvoice", "create-invoice");

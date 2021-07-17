@@ -35,7 +35,7 @@ namespace VenuesLiveTechnicalTest.API.Repositories
             await _appDbContext.AddAsync(invoice);
         }
 
-        public async Task<bool> Save()
+        public async Task<bool> SaveAsync()
         {
             return (await _appDbContext.SaveChangesAsync() >= 0);
         }

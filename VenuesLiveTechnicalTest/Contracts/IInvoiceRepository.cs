@@ -9,7 +9,7 @@ namespace VenuesLiveTechnicalTest.API.Contracts
         Task<List<Invoice>> GetInvoicesAsync();
         Task<Invoice> GetInvoiceByIdAsync(int id);
         Task CreateInvoiceAsync(Invoice invoice);
-        Task<bool> Save();
+        Task<bool> SaveAsync();
 
     }
 }

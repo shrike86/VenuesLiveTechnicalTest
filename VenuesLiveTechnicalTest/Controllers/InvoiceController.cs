@@ -54,7 +54,7 @@ namespace VenuesLiveTechnicalTest.Data.Controllers
             var newInvoice = _mapper.Map<Invoice>(invoiceDto);
 
             await _invoiceRepository.CreateInvoiceAsync(newInvoice);
-            await _invoiceRepository.Save();
+            await _invoiceRepository.SaveAsync();
 
             var returnInvoice = _mapper.Map<InvoiceDTO>(newInvoice);
 
